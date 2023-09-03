@@ -1,0 +1,20 @@
+{
+    "name": "Olivia Jiayi",
+    "title": "Data + Graphics Reporter",
+    "intro": "I'm a journalist with the focus of telling impactful stories at the intersection of data and design.",
+    "portfolioLink": "https://www.ctinsider.com/author/taylor-johnston/",
+    "socialIcons": [
+      {
+        "iconClass": "fab fa-twitter fa-2x",
+        "link": "https://twitter.com/TF_Johnston"
+      },
+      {
+        "iconClass": "fab fa-github fa-2x",
+        "link": "https://github.com/johnstont05"
+      },
+      {
+        "iconClass": "far fa-envelope fa-2x",
+        "link": "mailto:taylorfjohnston@gmail.com"
+      }
+    ]
+  }

@@ -22,24 +22,31 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Olivia Jiayi</title>
-    <meta
-      name="description"
-      content="Journalist with the focus of telling impactful stories at the intersection of data and design."
-    />
-    <meta
-      name="keywords"
-      content="taylor johnston design graphics code data visualization new york times new york"
-    />
-    <meta
-      name="twitter:image:src"
-      content="https://taylorfayjohnston.com/img/site-preview.jpg"
-    />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="twitter:image:src" content="" />
+    <meta property="og:image" content="" />
 
-    <meta
-      property="og:image"
-      content="https://taylorfayjohnston.com/img/site-preview.jpg"
-    />
+    <script>
+      fetch("metaTags.json") // Replace with the correct JSON file path
+        .then((response) => response.json())
+        .then((data) => {
+          // Update the meta tags with data from JSON
+          document.title = data.title;
+          document.querySelector('meta[name="description"]').content =
+            data.description;
+          document.querySelector('meta[name="keywords"]').content =
+            data.keywords;
+          document.querySelector('meta[name="twitter:image:src"]').content =
+            data.twitterImageSrc;
+          document.querySelector('meta[property="og:image"]').content =
+            data.ogImage;
+        })
+        .catch((error) => {
+          console.error("Error fetching JSON data:", error);
+        });
+    </script>
 
     <!-- Favicon -->
     <link
@@ -59,7 +66,6 @@
       sizes="16x16"
       href="favicon_io/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -92,1404 +98,173 @@
       <div class="row">
         <div
           class="jumbotron jumbotron-bg jumbo-size col-sm-12 col-sm-offset-0"
-        >
-          <h1 class="display-4">
-            <span id="thick-text">TAYLOR</span>
-            <span id="thick-text">JOHNSTON</span>
-          </h1>
-          <p class="title">Data + Graphics Reporter</p>
-          <p class="intro">
-            I'm a journalist with the focus of telling impactful stories at the
-            intersection of data and&nbsp;design. <br />
-            Scroll down to see my selected work or click
-            <a href="https://www.ctinsider.com/author/taylor-johnston/">here</a>
-          </p>
-          <div class="social-icons">
-            <a href="https://twitter.com/TF_Johnston" target="_blank"
-              ><i class="fab fa-twitter fa-2x"></i
-            ></a>
-            <a href="https://github.com/johnstont05" target="_blank"
-              ><i class="fab fa-github fa-2x"></i
-            ></a>
-            <a href="mailto:taylorfjohnston@gmail.com" target="_blank"
-              ><i class="far fa-envelope fa-2x"></i
-            ></a>
-          </div>
-        </div>
+          id="jumbotron-data"
+        ></div>
       </div>
       <!-- Jumbotron -->
 
       <!-- Cards -->
-      <div class="card-container">
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/connecticut-population-loss-2020-2022-18174989.php"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/ct-pop.jpg"
-                  alt="Heatmap of population by age range."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Changing Population in CT</h2>
-                  <p class="card-text">
-                    Used newly released Census population data to show how the
-                    state's population is changing by age group.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/ct-metro-north-lost-and-found/?src=ctipromostrip"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/metro-north.jpg"
-                  alt="Timeline showing different stations and the items found at them as you scroll down the page."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Metro North Lost & Found</h2>
-                  <p class="card-text">
-                    Designed and illustrated a project about the most common and
-                    interesting items found along the New Haven Line.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/ct-abandoned-boats-2023/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/abandoned-boats.jpg"
-                  alt="Bar chart showing the Connecticut of water with the most abandoned boats."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">CT's Abandoned Boats</h2>
-                  <p class="card-text">
-                    Reporting and Datawrapper charts showing what boats were
-                    registered as abandoned and where they were found.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/ct-dmv-rejected-vanity-license-plates/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/vanity-plates.jpg"
-                  alt="Photo illustrations of Connecticut vanity plates that were rejected."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Rejected by the CT DMV</h2>
-                  <p class="card-text">
-                    Reporting and graphics for a story about the vanity plates
-                    that were rejected and approved in Connecticut.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/ct-restraining-order-violations/?src=ctipdensecp"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/domestic-violence.jpg"
-                  alt="Scrolling packed dot chart showing domestic violence survivors who face domestic violence more than once in Connecticut."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Domestic Violence Violations</h2>
-                  <p class="card-text">
-                    Scrolling ai2html graphic explaining survivors who face
-                    domestic violence more than once in Connecticut.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/connecticut-pension-spending-2022-17893557.php?src=ctipdensecp"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/ct-pensions.jpg"
-                  alt="Bar chart showing Connecticut's pension spending by year, going back to 2014."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">State Employee Pensions</h2>
-                  <p class="card-text">
-                    Reporting and Datawrapper graphics showing Connecticut's top
-                    pension earners.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/sports/uconn-mens-basketball-college-blue-bloods/?src=ctipdensecp"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/blue-bloods.jpg"
-                  alt="Packed circle chart showing how many Final Four appearances of Blue Blood programs."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Is UConn a Blue Blood?</h2>
-                  <p class="card-text">
-                    Series of ai2html charts explaining how UConn could be
-                    considered a Blue Blood program.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/ct-troopers-overtime-cost-safety-17853450.php"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/heatmap-cal.jpg"
-                  alt="Heatmap calendar showing number of hours CT state police officers were paid for."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Police Hours Worked</h2>
-                  <p class="card-text">
-                    Heatmap calendar showing number of hours Connecticut state
-                    police officers were paid&nbsp;for.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/connecticut-irish-ancestry/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/irish-pop.jpg"
-                  alt="U.S. map showing population claiming irish ancestry."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Irish Influence in CT</h2>
-                  <p class="card-text">
-                    Datawrapper charts exploring irish ancestry in New England
-                    prior to St. Patrick's Day.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/ct-covid-deaths-17816629.php?src=ctipromostrip"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/covid-deaths.jpg"
-                  alt="Beeswarm plot showing how many CT residents lost their life to COVID-19."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">CT Covid Deaths</h2>
-                  <p class="card-text">
-                    Beeswarm plot showing how many CT residents lost their life
-                    to COVID-19.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/hartford-connecticut-residents-navigate-highway-divide/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/hartford-demographics.jpg"
-                  alt="Packed circle chart showing how many people died and were exposed to gun violence at Sandy Hook on the day of the shooting."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Divide Caused by Highways</h2>
-                  <p class="card-text">
-                    Made maps to show the divide highways create for Hartford
-                    residents.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/ct-population-migration-maps/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/ct-migration.jpg"
-                  alt="Diverging map showing where people came from before they moved to Connecticut."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Migration To and From CT</h2>
-                  <p class="card-text">
-                    Used Census data and graphics to show who moved into and out
-                    of Connecticut.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2023/connecticut-state-employee-pay-2022/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/state-pay.jpg"
-                  alt="Beeswarm plot showing Connecticut state employee pay in 2022 by agency."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">State Employee Pay</h2>
-                  <p class="card-text">
-                    Used D3.js + React to create a beeswarm plot of Connecticut
-                    state employee pay in 2022. Reported on additional findings
-                    <a
-                      href="https://www.ctinsider.com/news/article/CT-pay-spending-grew-at-fastest-rate-in-years-17731394.php?src=ctipdensecp"
-                      ><b>here</b></a
-                    >.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2022/2012-anniversary-sandy-hook-school-shooting/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/sandy-hook.jpg"
-                  alt="Packed circle chart showing how many people died and were exposed to gun violence at Sandy Hook on the day of the shooting."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Sandy Hook 10 Years Later</h2>
-                  <p class="card-text">
-                    Teamed up with Hearst's DevHub to help design & create
-                    project/graphics about what has/hasn't changed since the
-                    shooting 10 years ago.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2022/connecticut-flight-analysis-holiday-travel/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/air-travel.jpg"
-                  alt="Small multiple line charts showing flight cancellations and delays over time at select airports."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Air Travel Disruptions</h2>
-                  <p class="card-text">
-                    Reported and created graphics for a story about flight
-                    disruptions at Connecticut-area airports.
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://connecticutspj.org/ctspjs-2022-excellence-in-journalism-contest-winners/"
-                      target="_blank"
-                    >
-                      CTSPJ 2022 Excellence in Journalism Award Winner</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/free-phone-calls-CT-prisons-increased-17553263.php?src=ctipdensecp"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/phone-calls.jpg"
-                  alt="Bar chart showing the before and after of phone calls being in free for CT incarcerated individuals."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Now Free, Phone Calls Soar</h2>
-                  <p class="card-text">
-                    Reported and created graphics for a story about phone calls
-                    in CT prisons being free.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/new-york-student-restraint-seclusion-17474997.php"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/restrained.jpg"
-                  alt="Packed circle chart showing how many restraint incidents at New York school districts."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Students Restrained</h2>
-                  <p class="card-text">
-                    Packed circle chart showing thousands of students restrained
-                    in New York school districts.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/news/article/ny-children-disabilities-time-out-rooms-17475018.php"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/time-out.jpg"
-                  alt="Chart showing the median and longest duration students were in time out rooms in various New York school districts."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">How Long in Time Out?</h2>
-                  <p class="card-text">
-                    Clock illustrations to explain the median and longest
-                    duration NY students spent in time out rooms.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/sports/2022/nfl-football-tickets-new-england-patriots-new-york-giants-jets/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/nfl-tix.jpg"
-                  alt="Various maps showing NFL ticket sales across the state of Connecticut."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">NFL Ticket Sales in CT</h2>
-                  <p class="card-text">
-                    Worked with the Hearst DevHub to explore NFL team popularity
-                    with ticket sales across the state.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2022/ct-rent-tracker/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/rent-tracker.jpg"
-                  alt="Map showing the proposed Wegmans location in Norwalk, Connecticut."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Change in Rent</h2>
-                  <p class="card-text">
-                    Interactive map and charts showing where rent prices changed
-                    during the COVID-19 pandemic.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2022/monkeypox-cases-in-ct-tracker/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/monkeypox.jpg"
-                  alt="Chart showing rolling average of Monkeypox cases in Connecticut."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Tracking Monkeypox</h2>
-                  <p class="card-text">
-                    Scraped CT Dept. of Health data and used GitHub actions to
-                    auto update Datawrapper charts.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.ctinsider.com/projects/2022/ct-parks-google-ratings/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/state-parks.jpg"
-                  alt="Interactive map showing CT's state parks and their Google Maps ratings."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">CT State Parks</h2>
-                  <p class="card-text">
-                    MapLibre map with Google Maps ratings of state parks.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctpost.com/news/article/Proposed-Wegmans-will-generate-notable-17331939.php"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/wegmans.jpg"
-                  alt="Map showing the proposed Wegmans location in Norwalk, Connecticut."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Wegmans in Norwalk</h2>
-                  <p class="card-text">
-                    Ai2html map embed of proposed Wegmans site.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.ctpost.com/business/article/Groceries-gas-and-real-estate-Here-s-how-CT-17293635.php"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Hearst Connecticut Media</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/inflation.jpg"
-                  alt="Small multiple line chart showing different CPI categories and how costs have rose."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Inflation Hits Northeast</h2>
-                  <p class="card-text">
-                    Small multiples showing inflation using Consumer Price
-                    Index&nbsp;data.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/interactive/2022/01/25/business/unions-amazon-starbucks.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/unions.jpg"
-                  alt="Line chart showing percent of employees who are in a union in the U.S."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Union Membership has Fallen</h2>
-                  <p class="card-text">
-                    Reported and produced graphics for story about the current
-                    state of U.S. labor movement.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/2021/12/22/nyregion/de-blasio-report-card-inequity.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/deblasio-stats.jpg"
-                  alt="Line chart of stop-and-frisks during Bloombergs term and how they decreased during de Blasio's."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">de Blasio's Legacy on Inequality</h2>
-                  <p class="card-text">
-                    Charts showing how de Blasio performed on key issues, from
-                    homelessness to police stops.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/2021/11/25/climate/smithsonian-museum-flooding.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/smithsonian-flooding.jpg"
-                  alt="Map of flood areas on the National Mall and what buildings are at the greatest flood risk."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Smithsonian Museums at Risk</h2>
-                  <p class="card-text">
-                    Flood map created with QGIS and ai2html to show risk of
-                    flooding at Smithsonian buildings.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/2021/11/15/us/homicides-america.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/homicides.jpg"
-                  alt="Line chart showing the rise in violent crime versus homicide in 2020."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Inside America's Homicide Surge</h2>
-                  <p class="card-text">
-                    Charts created to show how the national homicde rates surged
-                    in 2020 compared to previous years.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/interactive/2021/11/07/us/politics/redistricting-maps-explained.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/redistricting.jpg"
-                  alt="Cartogram representing who is in control of redistricting in each state."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">How Maps Reshape American Politics</h2>
-                  <p class="card-text">
-                    Various cartograms, bar charts and maps made to explain how
-                    redistricting and gerrymandering works.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/2021/10/18/us/coronavirus-public-health.html?"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/public-health.jpg"
-                  alt="Maps showing different legistlation restricting state or local authority over health and emergency decisions."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">
-                    Where State Laws Limit Public Health Powers
-                  </h2>
-                  <p class="card-text">
-                    A set of maps showing where legistlation restricts state
-                    health and emergency decisions.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/2021/08/19/us/library-of-congress-evacuation.html?"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/bomb-threat.jpg"
-                  alt="Mapped location of a D.C. bomb threat, including key buildings and evacuated blocks."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">
-                    'Bomb Threat' Near Library of Congress
-                  </h2>
-                  <p class="card-text">
-                    Locator map for breaking news coverage of D.C. bomb threat
-                    and nearby evacuated blocks.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.nytimes.com/2021/07/22/nyregion/eric-adams-advisers.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The New York Times</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/adams-circle.jpg"
-                  alt="Infographic showing Eric Adams's inner and outer circle of allies."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Meet Eric Adams’s Inner Circle</h2>
-                  <p class="card-text">
-                    An ai2html infographic showing the inner and outer circle of
-                    allies who could help shape Eric Adams's administration and
-                    his agenda.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/health/coronavirus-and-inequality/one-home-many-generations-covid-risk-families"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/multi-gen.jpg"
-                  alt="Interactive map with toggle feature showing makeup of multigenerational households in each county"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">
-                    Multigenerational Households and COVID-19
-                  </h2>
-                  <p class="card-text">
-                    Toggle between race/ethnicity to see makeup of
-                    multigenerational households in the U.S.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/health/coronavirus-and-inequality/vaccine-long-term-care-workers-refusing-shots-nursing-home/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/long-term.jpg"
-                  alt="Interactive map showing percentages of long-term care workers who have been fully vaccinated"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">
-                    Long-Term Care Workers Refusing Shots
-                  </h2>
-                  <p class="card-text">
-                    Interactive map showing where long-term-careworkers received
-                    shots.
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://www.npr.org/sections/health-shots/2021/03/31/982772372/federal-program-to-bring-vaccine-to-nursing-homes-missed-around-half-of-staff"
-                      target="_blank"
-                      >Featured on NPR</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://github.com/johnstont05/cpi_style-guide"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/style-guide.jpg"
-                  alt="Style guide for all data visualizations and graphics at The Center for Public Integrity"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Data Visualization Style Guide</h2>
-                  <p class="card-text">
-                    Style guide that adheres to accessibility standards and is
-                    complete with color palettes, font styles and examples for
-                    colleagues to utilize.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/health/coronavirus-and-inequality/pre-existing-conditions-long-term-consequences-covid-patients/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/genesee-county.jpg"
-                  alt="Bar chart showing number of COVID-19 deaths in Genesee County by race"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Genesee County Deaths</h2>
-                  <p class="card-text">
-                    Stacked bar chart showing COVID-19 deaths categorized by
-                    race in a Michigan county.
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://flintbeat.com/pre-existing-conditions-and-long-term-consequences-the-struggle-of-some-covid-19-survivors/"
-                      target="_blank"
-                      >Featured on FlintBeat</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/inside-publici/newsletters/watchdog-newsletter/capitol-attack-underscores-white-supremacist-infiltration/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/capitol-attack.jpg"
-                  alt="Map tracking military and police involvement in Jan. 6 attack on the Capitol"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Tracking Participation</h2>
-                  <p class="card-text">
-                    Tracking law-enforcement/military participation in Jan. 6
-                    Capitol attack with an interactive map
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/health/coronavirus-and-inequality/south-dakota-covid-19-surge-nursing-homes-battle-zone/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/south-dakota-nursing-homes.jpg"
-                  alt="Choropleth map COVID-19 cases in South Dakota nursing homes "
-                />
-                <div class="card-body">
-                  <h2 class="card-title">South Dakota Nursing Homes</h2>
-                  <p class="card-text">
-                    Interactive maps showing impact of COVID-19 in SD nursing
-                    homes
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://www.huffpost.com/entry/south-dakota-nursing-home-deaths_n_5fe0cb36c5b60d4163449752"
-                      target="_blank"
-                      >Featured on HuffPost</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/inequality-poverty-opportunity/immigration/immigration-employment/trump-covid-19-immigrants-food-supply-farmworkers"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/foodworker-map.jpg"
-                  alt="Choropleth map of food production with spikes indicating COVID-19 cases"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Immigrant Foodworkers</h2>
-                  <p class="card-text">
-                    Interactive map of where immigrants produce food while
-                    facing COVID-19
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://sabew.org/best-in-business/"
-                      target="_blank"
-                      >SABEW</a
-                    >
-                    &
-                    <a
-                      href="https://journalism.columbia.edu/announcing-2021-winners-finalist-mike-berger-award-paul-tobenkin-award#:~:text=Susan%20Ferriss%2C%20reporter%2C%20Joe%20Yerardi,food%20production's%20overwhelming%20reliance%20on"
-                      target="_blank"
-                      >Paul Tobenkin Memorial Award Winner</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://publicintegrity.org/environment/factory-farming-air-pollution-pass-cafos/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Center for Public Integrity</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/cafo-map.jpg"
-                  alt="Choropleth map of concentrated animal feeding operations in the U.S."
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Big Farms</h2>
-                  <p class="card-text">
-                    Map showing locations of concentrated animal feeding
-                    operations in the U.S.
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://www.motherjones.com/environment/2020/09/heres-how-big-farms-got-a-big-government-pass-on-air-pollution/"
-                      target="_blank"
-                      >Featured on Mother Jones</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://ohiotoday.org/countdown-to-the-1970-closing/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Ohio Today</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/ohio-today-timeline.jpg"
-                  alt="Timeline of events leading to Ohio University's closing in 1970"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Countdown to the 1970 Closing</h2>
-                  <p class="card-text">
-                    Timeline of student activism at Ohio University which led to
-                    a history-making end to the school year
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="http://projects.thepostathens.com/SpecialProjects/coronavirus-ohio-cases-coverage-ohio-university/landing.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Post</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/ohio-covid-map.jpg"
-                  alt="Choropleth map of Ohio coronavirus cases, focusing on Athens County"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Covering COVID-19</h2>
-                  <p class="card-text">
-                    Landing page/map to inform OU and Athens about coronavirus
-                    updates
-                  </p>
-                  <p class="card-additional-text">
-                    <a
-                      href="https://blogs.spjnetwork.org/ccc/2020/04/07/week-1-design-winner/"
-                      target="_blank"
-                      >College Coronavirus Coverage Award Winner</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="http://2020.soulofathens.com/a-long-road/intro.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >Soul of Athens</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/capstone-a-long-road.jpg"
-                  alt="Capstone project for Soul of Athens"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">A Long Road</h2>
-                  <p class="card-text">
-                    Senior capstone covering the struggles of health care among
-                    medical providers and patients in Southeast Ohio
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="http://projects.thepostathens.com/SpecialProjects/suspended-ohio-university-hazing-reports/landing"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Post</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/greek-life-map.jpg"
-                  alt="Map of police reports at Ohio University Greek Life houses"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">SUSPENDED</h2>
-                  <p class="card-text">
-                    Landing page/map created when hazing allegations flooded OU
-                  </p>
-                  <p class="card-additional-text">
-                    Computation + Journalism Conference 2020 Award Winner
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="http://projects.thepostathens.com/SpecialProjects/the-post-ohio-university-salary-guide/index.html"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Post</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/salary-database.jpg"
-                  alt="Searchable database of all Ohio University employee salaries for 2019-2020"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">The Salary Guide</h2>
-                  <p class="card-text">
-                    Searchable database comparing all of the salaries of Ohio
-                    University employees from 2019-2020
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://projects.thepostathens.com/SpecialProjects/ohio-university-athens-crimes-2019-2020/index.html#13.3/39.32425/-82.1002"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Post</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/crime-map.jpg"
-                  alt="All reported crimes on campus and in the city of Athens"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">The Crime Map</h2>
-                  <p class="card-text">
-                    Interactive map showing the details of crimes reported by
-                    APD and OUPD, updated throughout the semester
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.dallasnews.com/news/2019/08/31/as-dallas-revives-public-pools-some-neighborhoods-are-left-behind/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Dallas Morning News</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/dallas-pools.jpg"
-                  alt="Interactive map of Dallas' public pools and the demographics of the areas they are located in"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Dallas' Public Pools</h2>
-                  <p class="card-text">
-                    Project on inequality in Dallas' public pools using data
-                    analysis and interactive map
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.dallasnews.com/news/crime/2019/07/22/new-victim-serial-murder-suspect-billy-chemirmir-idd-suit-tradition-prestonwood/"
-              target="_blank"
-            >
-              <div class="card mb-4 box-outline">
-                <small class="text-muted"
-                  ><span class="badge badge-pill badge-color"
-                    >The Dallas Morning News</span
-                  ></small
-                >
-                <img
-                  class="card-img-top"
-                  src="img/timeline-chemirmir.jpg"
-                  alt="Timeline showing all events in the Chemirmir case"
-                />
-                <div class="card-body">
-                  <h2 class="card-title">Billy Chemirmir Timeline</h2>
-                  <p class="card-text">
-                    Interactive timeline map showing alleged victims and how law
-                    enforcement pieced together the case
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+      <div class="container">
+        <div class="row" id="card-container"></div>
       </div>
+      <!-- Cards -->
     </div>
-    <!-- Cards -->
+
+    <script>
+      // Fetch the JSON data
+      fetch("personalData.json") // Replace with the correct JSON file path
+        .then((response) => response.json())
+        .then((data) => {
+          const jumbotronData = document.getElementById("jumbotron-data");
+
+          const h1 = document.createElement("h1");
+          h1.className = "display-4";
+
+          const name = document.createElement("span");
+          name.id = "thick-text";
+          name.textContent = data.name;
+
+          const title = document.createElement("span");
+          title.id = "thick-text";
+          title.textContent = data.title;
+
+          h1.appendChild(name);
+
+          const pTitle = document.createElement("p");
+          pTitle.className = "title";
+          pTitle.textContent = data.title;
+
+          const pIntro = document.createElement("p");
+          pIntro.className = "intro";
+          pIntro.textContent = data.intro;
+
+          const portfolioLink = document.createElement("a");
+          portfolioLink.href = data.portfolioLink;
+          portfolioLink.textContent =
+            "Scroll down to see my selected work or click here";
+
+          pIntro.appendChild(document.createElement("br"));
+          pIntro.appendChild(portfolioLink);
+
+          const socialIcons = document.createElement("div");
+          socialIcons.className = "social-icons";
+
+          data.socialIcons.forEach((iconData) => {
+            const iconLink = document.createElement("a");
+            iconLink.href = iconData.link;
+            const icon = document.createElement("i");
+            icon.className = iconData.iconClass;
+            iconLink.appendChild(icon);
+            socialIcons.appendChild(iconLink);
+          });
+
+          jumbotronData.appendChild(h1);
+          jumbotronData.appendChild(pTitle);
+          jumbotronData.appendChild(pIntro);
+          jumbotronData.appendChild(socialIcons);
+        })
+        .catch((error) => {
+          console.error("Error fetching JSON data:", error);
+        });
+    </script>
+
+    <script>
+      // Fetch the JSON data
+      fetch("portfolioData.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const cardContainer = document.getElementById("card-container");
+          let row; // Initialize a variable to track the current row
+
+          // Loop through the JSON data and create card elements
+          data.forEach((item, index) => {
+            if (index % 3 === 0) {
+              // Create a new row for every three cards
+              row = document.createElement("div");
+              row.className = "row";
+            }
+
+            const col = document.createElement("div");
+            col.className = "col-md-4";
+
+            const card = document.createElement("div");
+            card.className = "card";
+
+            const cardLink = document.createElement("a");
+            cardLink.href = item.link;
+            cardLink.target = "_blank";
+
+            const cardDiv = document.createElement("div");
+            cardDiv.className = "card-body";
+
+            const badge = document.createElement("small");
+            badge.className = "text-muted";
+
+            const badgeSpan = document.createElement("span");
+            badgeSpan.className = "badge badge-pill badge-color";
+            badgeSpan.textContent = item.source;
+            badge.appendChild(badgeSpan);
+
+            const cardImage = document.createElement("img");
+            cardImage.className = "card-img-top";
+            cardImage.src = item.image;
+            cardImage.alt = item.title;
+
+            const cardTitle = document.createElement("h2");
+            cardTitle.className = "card-title";
+            cardTitle.textContent = item.title;
+
+            const cardText = document.createElement("p");
+            cardText.className = "card-text";
+            cardText.textContent = item.description;
+
+            // Append elements to the card
+            cardDiv.appendChild(badge);
+            cardDiv.appendChild(cardImage);
+            cardDiv.appendChild(cardTitle);
+            cardDiv.appendChild(cardText);
+
+            cardLink.appendChild(cardDiv);
+            card.appendChild(cardLink);
+
+            col.appendChild(card); // Add the card to the column
+            row.appendChild(col); // Add the column to the row
+
+            if ((index + 1) % 3 === 0 || index === data.length - 1) {
+              // Add the row to the container for every three cards or the last row
+              cardContainer.appendChild(row);
+            }
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching JSON data:", error);
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="page-footer">
       <div class="footer-copyright text-center py-3">
-        © 2023 Copyright Taylor Johnston
+        © <span id="year"></span> Copyright <span id="name"></span>
       </div>
     </footer>
     <!-- Footer -->
+
+    <script>
+      fetch("personalData.json") // Replace with the correct JSON file path
+        .then((response) => response.json())
+        .then((data) => {
+          // Update the footer with data from JSON
+          document.getElementById("name").textContent = data.name;
+
+          // Automatically update the year
+          const yearSpan = document.getElementById("year");
+          const currentYear = new Date().getFullYear();
+          yearSpan.textContent = currentYear;
+        })
+        .catch((error) => {
+          console.error("Error fetching JSON data:", error);
+        });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

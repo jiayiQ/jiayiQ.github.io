@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Changing Population in CT",
+      "description": "Used newly released Census population data to show how the state's population is changing by age group.",
+      "image": "img/ct-pop.jpg",
+      "link": "https://www.ctinsider.com/news/article/connecticut-population-loss-2020-2022-18174989.php",
+      "source": "Hearst Connection Media"
+    },
+    {
+      "title": "Metro North Lost & Found",
+      "description": "Designed and illustrated a project about the most common and interesting items found along the New Haven Line.",
+      "image": "img/metro-north.jpg",
+      "link": "https://www.ctinsider.com/projects/2023/ct-metro-north-lost-and-found/?src=ctipromostrip",
+      "source": "Forbes"
+    },
+    {
+      "title": "CT's Abandoned Boats",
+      "description": "Reporting and Datawrapper charts showing what boats were registered as abandoned and where they were found.",
+      "image": "img/abandoned-boats.jpg",
+      "link": "https://www.ctinsider.com/projects/2023/ct-abandoned-boats-2023/",
+      "source": "Forbes"
+    },
+    {
+      "title": "Rejected by the CT DMV",
+      "description": "Reporting and graphics for a story about the vanity plates that were rejected and approved in Connecticut.",
+      "image": "img/vanity-plates.jpg",
+      "link": "https://www.ctinsider.com/projects/2023/ct-dmv-rejected-vanity-license-plates/",
+      "source": "Forbes"
+    },
+    {
+      "title": "Domestic Violence Violations",
+      "description": "Scrolling ai2html graphic explaining survivors who face domestic violence more than once in Connecticut.",
+      "image": "img/domestic-violence.jpg",
+      "link": "https://www.ctinsider.com/projects/2023/ct-restraining-order-violations/?src=ctipdensecp",
+      "source": "Forbes"
+    },
+    {
+      "title": "State Employee Pensions",
+      "description": "Reporting and Datawrapper graphics showing Connecticut's top pension earners.",
+      "image": "img/ct-pensions.jpg",
+      "link": "https://www.ctinsider.com/news/article/connecticut-pension-spending-2022-17893557.php?src=ctipdensecp",
+      "source": "Forbes"
+    },
+    {
+        "title": "State Employee Pensions",
+        "description": "Reporting and Datawrapper graphics showing Connecticut's top pension earners.",
+        "image": "img/ct-pensions.jpg",
+        "link": "https://www.ctinsider.com/news/article/connecticut-pension-spending-2022-17893557.php?src=ctipdensecp",
+        "source": "Forbes"
+    }
+  ]
