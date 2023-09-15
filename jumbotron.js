@@ -27,7 +27,7 @@ fetch("personalData.json") // Replace with the correct JSON file path
 
     const portfolioLink = document.createElement("a");
     portfolioLink.href = data.portfolioLink;
-    portfolioLink.textContent =
+    //portfolioLink.textContent =
       "Scroll down to see my selected work or click here";
 
     pIntro.appendChild(document.createElement("br"));
