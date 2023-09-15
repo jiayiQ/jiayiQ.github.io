@@ -25,10 +25,10 @@ fetch("personalData.json") // Replace with the correct JSON file path
     pIntro.className = "intro";
     pIntro.textContent = data.intro;
 
-    //const portfolioLink = document.createElement("a");
-   //portfolioLink.href = data.portfolioLink;
-    //portfolioLink.textContent =
-     // "Scroll down to see my selected work or click here";
+    const portfolioLink = document.createElement("a");
+    portfolioLink.href = data.portfolioLink;
+    portfolioLink.textContent =
+    "Scroll down to see my selected work or click here";
 
     pIntro.appendChild(document.createElement("br"));
     pIntro.appendChild(portfolioLink);
