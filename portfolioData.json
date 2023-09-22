@@ -1,16 +1,17 @@
 [
-    {
-      "title": "Changing Population in CT",
-      "description": "Used newly released Census population data to show how the state's population is changing by age group.",
-      "image": "img/ct-pop.jpg",
-      "link": "",
-      "source": "Hearst Connection Media"
-    },
-    {
-      "title": "Metro North Lost & Found",
-      "description": "Designed and illustrated a project about the most common and interesting items found along the New Haven Line.",
-      "image": "img/metro-north.jpg",
-      "link": "",
-      "source": "Forbes"
-    },
+  {
+    "title": "Changing Population in CT",
+    "description": "Used newly released Census population data to show how the state's population is changing by age group.",
+    "image": "img/ct-pop.jpg",
+    "link": "",
+    "source": "Hearst Connection Media"
+  },
+  {
+    "title": "Metro North Lost & Found",
+    "description": "Designed and illustrated a project about the most common and interesting items found along the New Haven Line.",
+    "image": "img/metro-north.jpg",
+    "link": "",
+    "source": "Forbes"
+  }
+]
  
