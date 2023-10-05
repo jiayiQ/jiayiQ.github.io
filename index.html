@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8" />
+    <title>Jiayi Qiu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <script src="js/modernizr-custom.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-EQR4SBHNXR"
+      src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,137 +36,278 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-EQR4SBHNXR");
+      gtag("config", "UA-90655448-1");
     </script>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="twitter:image:src" content="" />
-    <meta property="og:image" content="" />
+    <body>
+      <header class="main_h sticky">
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-3 col-md-3">
+            <a
+              class="mr-3"
+              href="mailto:jiayi.qiu.gobears@berkeley.edu"
+              target="_top"
+              ><i class="fa fa-envelope" aria-hidden="true"></i
+            ></a>
+            <a
+              class="mr-3"
+              href="https://www.linkedin.com/in/han-huang-74778a105"
+              target="_top"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com/Han_Miami" target="_top"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </div>
 
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
+          <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+          <div class="col-xl-8 col-lg-8 col-md-8">
+            <nav>
+              <ul>
+                <li><a href="index.html">About me</a></li>
+                <li><a href="#awards">Awards</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      
+      <!-- intro content -->
+      <div class="row justify-content-center" id="content"></div>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+      <!-- Digital Print Video button group -->>
+      <!-- <div class="button_group">
+        <div class="items"><div class="btns button-1">Digital</div></div>
+        <div class="items"><div class="btns button-2">Print</div></div>
+        <div class="items"><div class="btns button-3">video</div></div>
+      </div> -->
+      <!-- button group -->
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+      <div class="row justify-content-center">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <hr class="separator" />
+        </div>
+      </div>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
+      <div class="gif_group_1 interactive">
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <p class="company">South China Morning Post</p>
+            <div class="eachBox">
+              <a
+                target="_blank"
+                href="https://multimedia.scmp.com/infographics/news/china/article/3195959/20th-central-committee-members/index.html"
+              >
+                <img class="coverImage" src="img/dataBank.jpg" />
+              </a>
+            </div>
+            <p class="graphic-title">The 20th Party Congress DataBank</p>
+            <p class="graphic-skill">#javascript</p>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <p class="company">South China Morning Post</p>
+            <div class="eachBox">
+              <a
+                target="_blank"
+                href="https://multimedia.scmp.com/infographics/news/hong-kong/article/3180601/subdivided-flats/index.html"
+              >
+                <img src="img/sdu.gif" width="100%" />
+              </a>
+            </div>
+            <p class="graphic-title">
+              Life in Hong Kong’s tiny subdivided units
+            </p>
+            <p class="graphic-skill">#d3.js #ai2html #javascript</p>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <p class="company">South China Morning Post</p>
+            <div class="eachBox">
+              <a
+                target="_blank"
+                href="https://multimedia.scmp.com/infographics/news/china/article/3168781/nixon-in-china/index.html"
+              >
+                <img src="img/cnA.jpg" width="100%" />
+              </a>
+            </div>
+            <p class="graphic-title">
+              How Richard Nixon’s visit to China 50 years ago changed Sino-US
+              relations
+            </p>
+            <p class="graphic-skill">#d3.js #ai2html #Illustrator</p>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <p class="company">South China Morning Post</p>
+            <div class="eachBox">
+              <a
+                target="_blank"
+                href="https://multimedia.scmp.com/infographics/news/hong-kong/article/3122906/bno/index.html"
+              >
+                <img src="img/bno.gif" width="100%" />
+              </a>
+            </div>
+            <p class="graphic-title">To move or not to move</p>
+            <p class="graphic-skill">#d3.js #ai2html #Illustrator</p>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <p class="company">South China Morning Post</p>
+            <div class="eachBox">
+              <a
+                target="_blank"
+                href="https://multimedia.scmp.com/infographics/news/china/article/3143957/algae/index.html"
+              >
+                <img src="img/algae.jpg" width="100%" />
+              </a>
+            </div>
+            <p class="graphic-title">
+              Record algae bloom swamps China’s port city of Qingdao
+            </p>
+            <p class="graphic-skill">#QGIS #ai2html #Illustrator</p>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <p class="company">South China Morning Post</p>
+            <div class="eachBox">
+              <a
+                target="_blank"
+                href="https://multimedia.scmp.com/infographics/news/china/article/3117714/mainland-quarantine/index.html"
+              >
+                <img src="img/quarantine.gif" width="100%" />
+              </a>
+            </div>
+            <p class="graphic-title">
+              Travel diary: 14 days in quarantine in mainland China
+            </p>
+            <p class="graphic-skill">#ai2html #Illustrator</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="awards" id="awards">
+        <div class="row justify-content-center">
+          <p class="award-name">Awards</p>
+        </div>
+        <div class="row">
+          <div class="malofiej">
+            <p class="award-title">Malofiej</p>
+            <p class="eachAward">
+              <span class="bronze"
+                ><i class="fa fa-circle" aria-hidden="true"></i></span
+              >Bronze for print feature – Nation/World/Business News:
+              <span class="project">Where coal is king (2020)</span>
+            </p>
+            <p class="eachAward">
+              <span class="best"
+                ><i class="fa fa-circle" aria-hidden="true"></i></span
+              >Best of show:
+              <span class="project"
+                >A window into Delhi’s deadly pollution (2019)</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="snd">
+            <p class="award-title">Society for News Design</p>
+            <p class="eachAward">
+              Award of excellence - Category 3I and Category 09 -
+              <span class="project">Raining cats and dogs (2022)</span>
+            </p>
+
+            <p class="eachAward">
+              Award of excellence - Infographics: Health -
+              <span class="project"> Travel diary (2022)</span>
+            </p>
+            <p class="eachAward">
+              Award of excellence - Story Page Design: Local Issues and Story
+              Page Design: Politics -
+              <span class="project">where is Carrie Lam (2021)</span>
+            </p>
+            <p class="eachAward">
+              Award of excellence - Infographics: National -
+              <span class="project">China's wildlife trade (2021)</span>
+            </p>
+            <p class="eachAward">
+              <span class="bronze"
+                ><i class="fa fa-circle" aria-hidden="true"></i></span
+              >Bronze - Features (PRINT) -
+              <span class="project"
+                >Big drop in US visas for mainland Chinese students (2021)
+              </span>
+            </p>
+            <p class="eachAward">
+              <span class="bronze"
+                ><i class="fa fa-circle" aria-hidden="true"></i></span
+              >Bronze - Nation/World/Business News -
+              <span class="project">Where coal is king (2020)</span>
+            </p>
+
+            <p class="eachAward">
+              Award of excellence - News Design [Pages] and Information Graphics
+              [Single] - <span class="project">Where coal is king (2020)</span>
+            </p>
+            <p class="eachAward">
+              Award of excellence - Combination Print & Digital -
+              <span class="project"
+                >Sorting out China’s waste problem (2019)</span
+              >
+            </p>
+            <p class="eachAward">
+              Award of Excellence - Story Page Design: Gender/Id & Soc -
+              <span class="project">Going gray (2019)</span>
+            </p>
+            <p class="eachAward">
+              <span class="bronze"
+                ><i class="fa fa-circle" aria-hidden="true"></i></span
+              >Bronze - Information Graphics: Planned Coverage and Use of
+              Multimedia -
+              <span class="project"
+                >A window into Delhi’s deadly pollution (2018)</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="sopa">
+            <p class="award-title">SOPA Awards 2021 </p>
+            <p class="eachAward">
+              Excellence in Information Graphics: Honorable Mention -
+              <span class="project"
+                >Coronavirus: the disease Covid-19 explained</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="infobeau">
+            <p class="award-title">Information is beautiful awards</p>
+            <p class="eachAward">
+              <span class="bronze"
+                ><i class="fa fa-circle" aria-hidden="true"></i></span
+              >Bronze - People, Language & Identity -
+              <span class="project">Going gray (2019)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom"></div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/main.js"></script>
+    <script src="jsonjs/intro_content.js"></script>
+    </script>
   </head>
-
-  <body>
-    <div class="container">
-      <!-- Jumbotron -->
-      <div class="row">
-        <div
-          class="jumbotron jumbotron-bg jumbo-size col-sm-12 col-sm-offset-0"
-          id="jumbotron-data"
-        ></div>
-      </div>
-      <!-- Jumbotron -->
-
-      <!-- Cards -->
-      <div class="container">
-        <div class="row" id="card-container"></div>
-      </div>
-      <!-- Cards -->
-    </div>
-
-    <!-- Footer -->
-    <footer class="page-footer">
-      <div class="footer-copyright text-center py-3">
-        © <span id="year"></span> Copyright <span id="name"></span>
-      </div>
-    </footer>
-    <!-- Footer -->
-
-    <script>
-      fetch("personalData.json") // Replace with the correct JSON file path
-        .then((response) => response.json())
-        .then((data) => {
-          // Update the footer with data from JSON
-          document.getElementById("name").textContent = data.name;
-
-          // Automatically update the year
-          const yearSpan = document.getElementById("year");
-          const currentYear = new Date().getFullYear();
-          yearSpan.textContent = currentYear;
-        })
-        .catch((error) => {
-          console.error("Error fetching JSON data:", error);
-        });
-    </script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fade-in effect -->
-    <script>
-      document.body.className += " fade-out";
-    </script>
-    <script>
-      $(function () {
-        $("body").removeClass("fade-out");
-      });
-    </script>
-
-    <script src="metaTags.js"></script>
-    <script src="jumbotron.js"></script>
-    <script src="portfolio.js"></script>
-  </body>
 </html>
