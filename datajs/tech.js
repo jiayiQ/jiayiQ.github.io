@@ -1,6 +1,8 @@
 // Function to populate the HTML content
-function populateTech(data, containerClass) {
+function populateGraphics(data, containerClass) {
   const container = document.querySelector(`.${containerClass}`);
+  const rowContainer = document.createElement("div"); // Create the row container
+  rowContainer.className = "row justify-content-center"; // Set the class
 
   data.forEach((item) => {
     const colElement = document.createElement("div");
@@ -36,8 +38,10 @@ function populateTech(data, containerClass) {
     colElement.appendChild(titleElement);
     colElement.appendChild(skillElement);
 
-    container.appendChild(colElement);
+    rowContainer.appendChild(colElement); // Append the column to the row container
   });
+
+  container.appendChild(rowContainer); // Append the row container to the main container
 }
 
 // Fetch the JSON data from the external file for interactive
@@ -45,29 +49,29 @@ fetch("json/techProject.json")
   .then((response) => response.json())
   .then((data) => {
     // Call the function to populate the content for interactive
-    populateTech(data, "gif_group_1.interactive");
+    populateGraphics(data, "gif_group_1.interactive");
   })
   .catch((error) => {
     console.error("Error fetching JSON data for interactive:", error);
   });
 
 // Fetch the JSON data from the external file for info
-fetch("json/techProject.json")
+fetch("json/socialProject.json")
   .then((response) => response.json())
   .then((data) => {
     // Call the function to populate the content for info
-    populateTech(data, "gif_group_1.info");
+    populateGraphics(data, "gif_group_1.info");
   })
   .catch((error) => {
     console.error("Error fetching JSON data for info:", error);
   });
 
 // Fetch the JSON data from the external file for video
-fetch("json/techProject.json")
+fetch("json/politicsProject.json")
   .then((response) => response.json())
   .then((data) => {
     // Call the function to populate the content for video
-    populateTech(data, "gif_group_1.video");
+    populateGraphics(data, "gif_group_1.video");
   })
   .catch((error) => {
     console.error("Error fetching JSON data for video:", error);
