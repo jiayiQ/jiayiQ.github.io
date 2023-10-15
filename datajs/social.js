@@ -1,6 +1,6 @@
 // Function to populate the HTML content
-function populateGraphics(data) {
-  const container = document.querySelector(".gif_group_1.interactive .row");
+function populateTech(data) {
+  const container = document.querySelector(".gif_group_1.info.row");
 
   data.forEach((item) => {
     const colElement = document.createElement("div");
@@ -41,11 +41,11 @@ function populateGraphics(data) {
 }
 
 // Fetch the JSON data from the external file
-fetch("json/portfolioData.json")
+fetch("json/socialProject.json")
   .then((response) => response.json())
   .then((data) => {
     // Call the function to populate the content
-    populateGraphics(data);
+    populateTech(data);
   })
   .catch((error) => {
     console.error("Error fetching JSON data:", error);
