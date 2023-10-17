@@ -9,5 +9,10 @@
   {
     "status": "completed",
     "item": "Be in a movie/commercial (I’ve actually done this in 3 countries: Vietnam, India, US)"
-  }
+  },
+  {
+    "status": "completed",
+    "item": "Be in a movie/commercial (I’ve actually done this in 3 countries: Vietnam, India, US)"
+  },
+  { "status": "doing", "item": "Be awesome" }
 ]

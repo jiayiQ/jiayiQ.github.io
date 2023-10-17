@@ -37,22 +37,46 @@
       Things I want to do before I die. Please let me know if you have any
       recommendation.
     </p>
-    <p>Progress as of Dec 31, 2022: 39.75/93</p>
+    <p id="progress">Progress as of Dec 31, 2022</p>
+    <p>
+      completed: <span id="completedCount">0</span>/<span id="totalCount"
+        >0</span
+      >
+    </p>
 
     <ol id="bucketList"></ol>
   </body>
   <script>
+    const progressElement = document.getElementById("progress");
+    const completedCountElement = document.getElementById("completedCount");
+    const totalCountElement = document.getElementById("totalCount");
+
     fetch("json/list100.json")
       .then((response) => response.json())
       .then((bucketListData) => {
         const bucketList = document.getElementById("bucketList");
+        let completedCount = 0;
 
         bucketListData.forEach((itemData) => {
           const listItem = document.createElement("li");
-          listItem.textContent =
-            (itemData.status === "completed" ? "✓ " : "✗ ") + itemData.item;
+          if (itemData.status === "completed") {
+            listItem.textContent = "✓ " + itemData.item;
+            listItem.classList.add("completed");
+            completedCount++;
+          } else if (itemData.status === "incomplete") {
+            listItem.textContent = "✗ " + itemData.item;
+            listItem.classList.add("incomplete");
+          } else if (itemData.status === "doing") {
+            listItem.textContent = "~ " + itemData.item;
+            listItem.classList.add("doing");
+            completedCount += 0.5;
+          }
+
           bucketList.appendChild(listItem);
         });
+        // Update the completed and total counts
+        completedCountElement.textContent = completedCount;
+        totalCountElement.textContent = bucketListData.length;
       })
       .catch((error) => console.error("Error fetching JSON:", error));
   </script>
