@@ -1,0 +1,13 @@
+[
+  { "status": "completed", "item": "Learn Spanish" },
+  { "status": "completed", "item": "Live in another country" },
+  { "status": "completed", "item": "Start a nonprofit organization" },
+  {
+    "status": "incomplete",
+    "item": "See my book being sold at an airport outside Vietnam"
+  },
+  {
+    "status": "completed",
+    "item": "Be in a movie/commercial (I’ve actually done this in 3 countries: Vietnam, India, US)"
+  }
+]
