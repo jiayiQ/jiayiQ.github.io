@@ -1,18 +1,18 @@
 [
-  { "status": "completed", "item": "Learn Spanish" },
+  { "status": "completed", "item": "Work as an acoustic guitar player in the bar " },
   { "status": "completed", "item": "Live in another country" },
   { "status": "completed", "item": "Start a nonprofit organization" },
   {
     "status": "incomplete",
-    "item": "See my book being sold at an airport outside Vietnam"
+    "item": "See my book being sold at an airport in US"
   },
   {
     "status": "completed",
-    "item": "Be in a movie/commercial (I’ve actually done this in 3 countries: Vietnam, India, US)"
+    "item": "Be in a movie/commercial "
   },
   {
     "status": "completed",
-    "item": "Be in a movie/commercial (I’ve actually done this in 3 countries: Vietnam, India, US)"
+    "item": "- )"
   },
   { "status": "doing", "item": "Be awesome" }
 ]
