@@ -1,10 +1,10 @@
 [
   {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/china/article/3195959/20th-central-committee-members/index.html",
-    "imageSrc": "img/dataBank.jpg",
-    "graphicTitle": "The 20th Party Congress DataBank",
-    "graphicSkill": "#javascript"
+    "company": "Gender Inequality In Wages",
+    "link": "Gender Inequality (9).html",
+    "imageSrc": "img/gender.png",
+    "graphicTitle": " Gender Differences in Labor Market Values ",
+    "graphicSkill": "#css #HTML #data cleaning #scarter plots"
   },
   {
     "company": "South China Morning Post",
@@ -12,13 +12,7 @@
     "imageSrc": "img/sdu.gif",
     "graphicTitle": "Life in Hong Kong’s tiny subdivided units",
     "graphicSkill": "#d3.js #ai2html #javascript"
-  },
-  {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/china/article/3168781/nixon-in-china/index.html",
-    "imageSrc": "img/cnA.jpg",
-    "graphicTitle": "How Richard Nixon’s visit to China 50 years ago changed Sino-US relations",
-    "graphicSkill": "#d3.js #ai2html #Illustrator"
   }
+
   
 ]
