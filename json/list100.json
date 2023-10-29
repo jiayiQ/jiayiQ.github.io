@@ -1,18 +1,28 @@
 [
   { "status": "completed", "item": "Work as an acoustic guitar player in the bar " },
   { "status": "completed", "item": "Live in another country" },
-  { "status": "completed", "item": "Start a nonprofit organization" },
   {
     "status": "incomplete",
     "item": "See my book being sold at an airport in US"
   },
   {
-    "status": "completed",
-    "item": "Be in a movie/commercial "
+    "status": "incomplete",
+    "item": "Be in a movie "
   },
-  {
-    "status": "completed",
-    "item": "- )"
-  },
-  { "status": "doing", "item": "Be awesome" }
+  { "status": "incomplete", "item": "Go to Edinburgh to see the rainy scenery." }
+  ,
+  { "status": "doing", "item": "Outdoor camping." }
+  ,
+  { "status": "incomplete", "item": "Have a camper van and live a carefree life." },
+  
+  { "status": "incomplete", "item": "Travel to Europe" }
+  ,
+  { "status": "incomplete", "item": "Return to Dali in Yunnan for another trip and revisit that restaurant." }
+  ,
+  { "status": "incomplete", "item": "Go to Japan to see cherry blossoms, eat matcha cakes, and visit the local latte café." }
+  ,
+  { "status": "doing", "item": "See the night sky/stargazing/northern lights/cosmic wonders and experience the romance of astronomy." }
+  ,
+  { "status": "incomplete", "item": "Build a satisfying little cabin/try to remodel interior decoration for a sense of a humanistic fairy tale." }
+  
 ]
