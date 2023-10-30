@@ -8,9 +8,9 @@
   },
   {
     "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/hong-kong/article/3180601/subdivided-flats/index.html",
+    "link": "https://multimedia.scmprticle/3180601/subdivided-flats/index.html",
     "imageSrc": "img/sdu.gif",
-    "graphicTitle": "Life in Hong Kong’s tiny subdivided units",
+    "graphicTitle": "Life in Hong Kong",
     "graphicSkill": "#d3.js #ai2html #javascript"
   }
 
