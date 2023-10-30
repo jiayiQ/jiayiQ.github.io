@@ -1,44 +1,9 @@
 [
   {
-    "company": "South China Morning Post",
+    "company": "2024 Elections (Working on it, not fully finished)",
     "link": "https://multimedia.scmp.com/infographics/news/china/article/3195959/20th-central-committee-members/index.html",
     "imageSrc": "img/dataBank.jpg",
-    "graphicTitle": "The 20th Party Congress DataBank",
-    "graphicSkill": "#javascript"
-  },
-  {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/hong-kong/article/3180601/subdivided-flats/index.html",
-    "imageSrc": "img/sdu.gif",
-    "graphicTitle": "Life in Hong Kong’s tiny subdivided units",
-    "graphicSkill": "#d3.js #ai2html #javascript"
-  },
-  {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/china/article/3168781/nixon-in-china/index.html",
-    "imageSrc": "img/cnA.jpg",
-    "graphicTitle": "How Richard Nixon’s visit to China 50 years ago changed Sino-US relations",
-    "graphicSkill": "#d3.js #ai2html #Illustrator"
-  },
-  {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/hong-kong/article/3122906/bno/index.html",
-    "imageSrc": "img/bno.gif",
-    "graphicTitle": "To move or not to move",
-    "graphicSkill": "#d3.js #ai2html #Illustrator"
-  },
-  {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/china/article/3143957/algae/index.html",
-    "imageSrc": "img/algae.jpg",
-    "graphicTitle": "Record algae bloom swamps China’s port city of Qingdao",
-    "graphicSkill": "#QGIS #ai2html #Illustrator"
-  },
-  {
-    "company": "South China Morning Post",
-    "link": "https://multimedia.scmp.com/infographics/news/china/article/3117714/mainland-quarantine/index.html",
-    "imageSrc": "img/quarantine.gif",
-    "graphicTitle": "Travel diary: 14 days in quarantine in mainland China",
-    "graphicSkill": "#ai2html #Illustrator"
+    "graphicTitle": "Voting Trend On County Level in Georgia",
+    "graphicSkill": "#QGIS #R"
   }
 ]
