@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List 100</title>
+
+    <style>
+      body {
+        font-size: 24px; /* Set the default font size for the entire page */
+      }
+
+      h1 {
+        font-size: 50px; /* Increase the font size for the heading */
+      }
+
+      ul {
+        list-style-type: decimal; /* Change the list style type */
+      }
+
+      li {
+        font-size: 20px; /* Increase the font size for list items */
+        margin: 8px 0; /* Add some spacing between list items */
+      }
+
+      @font-face {
+        font-family: "CustomFont";
+        src: url("path-to-your-font-file.woff") format("woff");
+      }
+
+      body {
+        font-family: "CustomFont", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List 100</h1>
+    <p>
+      Things I want to do before I die. Feel free to let me know if you have any
+      recommendation.
+    </p>
+    <p id="progress">Progress as of today </p>
+    <p>
+      completed: <span id="completedCount">0</span>/<span id="totalCount"
+        >0</span
+      >
+    </p>
+
+    <ol id="bucketList"></ol>
+  </body>
+  <script>
+    const progressElement = document.getElementById("progress");
+    const completedCountElement = document.getElementById("completedCount");
+    const totalCountElement = document.getElementById("totalCount");
+
+    fetch("json/list100.json")
+      .then((response) => response.json())
+      .then((bucketListData) => {
+        const bucketList = document.getElementById("bucketList");
+        let completedCount = 0;
+
+        bucketListData.forEach((itemData) => {
+          const listItem = document.createElement("li");
+          if (itemData.status === "completed") {
+            listItem.textContent = "✓ " + itemData.item;
+            listItem.classList.add("completed");
+            completedCount++;
+          } else if (itemData.status === "incomplete") {
+            listItem.textContent = "✗ " + itemData.item;
+            listItem.classList.add("incomplete");
+          } else if (itemData.status === "doing") {
+            listItem.textContent = "~ " + itemData.item;
+            listItem.classList.add("doing");
+            completedCount += 0.5;
+          }
+
+          bucketList.appendChild(listItem);
+        });
+        // Update the completed and total count
+        completedCountElement.textContent = completedCount;
+        totalCountElement.textContent = bucketListData.length;
+      })
+      .catch((error) => console.error("Error fetching JSON:", error));
+  </script>
+</html>

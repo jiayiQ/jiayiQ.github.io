@@ -1,16 +1,23 @@
 [
   {
+    "company": "Gender Inequality In Wages",
+    "link": "html/Georgia.html",
+    "imageSrc": "img/georgia.png",
+    "graphicTitle": " The Evolution of Absentee Voting in Georgia ",
+    "graphicSkill": "#R #HTML #data cleaning #scarter plots"
+  },
+  {
+    "company": "Gender Inequality In Wages",
+    "link": "html/Gender Inequality.html",
+    "imageSrc": "img/gender.png",
+    "graphicTitle": " Gender Differences in Labor Market Values ",
+    "graphicSkill": "#css #HTML #data cleaning #scarter plots"
+  },
+  {
     "company": "AI Sillcon Valley",
     "link": "https://datadeepdivediva.squarespace.com/4aiarticles/blog-post-title-one-ty8z2",
     "imageSrc": "img/quant1.png",
     "graphicTitle": "AI revolution in stock trading",
     "graphicSkill": "#data wrapper"
-  },
-  {
-    "company": "Gender Inequality In Wages",
-    "link": "Gender Inequality (9).html",
-    "imageSrc": "img/gender.png",
-    "graphicTitle": " Gender Differences in Labor Market Values ",
-    "graphicSkill": "#css #HTML #data cleaning #scarter plots"
   }
 ]
