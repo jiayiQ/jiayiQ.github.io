@@ -1,6 +1,6 @@
 [
   {
-    "company": "Gender Inequality In Wages",
+    "company": "Politics",
     "link": "html/Georgia.html",
     "imageSrc": "img/georgia.png",
     "graphicTitle": " The Evolution of Absentee Voting in Georgia ",
@@ -11,6 +11,13 @@
     "link": "html/Gender Inequality.html",
     "imageSrc": "img/gender.png",
     "graphicTitle": " Gender Differences in Labor Market Values ",
+    "graphicSkill": "#css #HTML #data cleaning #scarter plots"
+  },
+  {
+    "company": "Interative Map of CA ",
+    "link": "Interative Map- Median Income in CA.html",
+    "imageSrc": "img/CaliforniaBear.png",
+    "graphicTitle": " R, Heatmaps ",
     "graphicSkill": "#css #HTML #data cleaning #scarter plots"
   },
   {
