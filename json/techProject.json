@@ -15,7 +15,7 @@
   },
   {
     "company": "Interative Map of CA ",
-    "link": "Interative Map- Median Income in CA.html",
+    "link": "html/Interative Map- Median Income in CA.html",
     "imageSrc": "img/CaliforniaBear.png",
     "graphicTitle": " R, Heatmaps ",
     "graphicSkill": "#css #HTML #data cleaning #scarter plots"
