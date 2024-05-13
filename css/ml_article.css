@@ -1,0 +1,74 @@
+/* Global Styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+/* Header Styles */
+
+.entry-title {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 4em; 
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Image Styles */
+
+.image {
+  margin-top: 50px;
+  position: relative;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-caption-wrapper {
+  bottom: 0; /* Align the caption to the bottom of the figure */
+  left: 0; /* Align the caption to the left of the figure */
+  width: 100%; /* Ensure the caption spans the full width of the figure */
+}
+
+.image-caption {
+  font-style: italic;
+  color: gray;
+  margin-bottom: 70px;
+  font-size: 1.2em;
+  text-align: relative;
+}
+
+/* Content Styles */
+
+.content-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.6em;
+}
+
+.author-name {
+  font-size: 1.5em;
+  color: gray;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}

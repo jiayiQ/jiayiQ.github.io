@@ -1,10 +1,15 @@
 // Function to populate the HTML content
 function populateGraphics(data, containerClass) {
   const container = document.querySelector(`.${containerClass}`);
-  const rowContainer = document.createElement("div"); // Create the row container
-  rowContainer.className = "row justify-content-center"; // Set the class
+  let rowContainer; // Declare rowContainer outside the loop
 
-  data.forEach((item) => {
+  data.forEach((item, index) => {
+    if (index % 3 === 0) {
+      rowContainer = document.createElement("div"); // Create new row container for every 3rd item
+      rowContainer.className = "row justify-content-start"; // Set class to start from left
+      container.appendChild(rowContainer); // Append the new row container to the main container
+    }
+
     const colElement = document.createElement("div");
     colElement.className = "col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12";
 
@@ -38,10 +43,8 @@ function populateGraphics(data, containerClass) {
     colElement.appendChild(titleElement);
     colElement.appendChild(skillElement);
 
-    rowContainer.appendChild(colElement); // Append the column to the row container
+    rowContainer.appendChild(colElement); // Append the column to the current row container
   });
-
-  container.appendChild(rowContainer); // Append the row container to the main container
 }
 
 // Fetch the JSON data from the external file for interactive

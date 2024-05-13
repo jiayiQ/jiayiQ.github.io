@@ -19,7 +19,6 @@ function populateContent(data) {
     const pElement = document.createElement("p");
     pElement.className = "intro_content";
     pElement.innerHTML = paragraph; // Use innerHTML to render HTML tags
-
     // Append paragraphs to the div
     divElement.appendChild(pElement);
   });

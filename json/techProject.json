@@ -8,7 +8,7 @@
   },
   {
     "company": "Gender Inequality In Wages",
-    "link": "html/Gender Inequality.html",
+    "link": "html/Gender_Inequality.html",
     "imageSrc": "img/gender.png",
     "graphicTitle": " Gender Differences in Labor Market Values ",
     "graphicSkill": "#css #HTML #data cleaning #scarter plots"
@@ -19,5 +19,12 @@
     "imageSrc": "img/CaliforniaBear.png",
     "graphicTitle": " R, Heatmaps ",
     "graphicSkill": "#css #HTML #data cleaning #scarter plots"
+  },
+  {
+    "company": "Machine Learning Article",
+    "link": "html/ml_article.html",
+    "imageSrc": "https://images.squarespace-cdn.com/content/v1/647ecf5263933b64b3f6f93b/0dfd5062-f40a-484f-a039-451337dbe535/1_60.png",
+    "graphicTitle": "Can chatgpt be your expert stock trader?",
+    "graphicSkill": "#R #HTML #data cleaning #scarter plots"
   }
 ]
