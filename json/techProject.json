@@ -1,5 +1,12 @@
 [
   {
+    "company": "Machine Learning Article",
+    "link": "https://jiayi112.pythonanywhere.com",
+    "imageSrc": "img/election.png",
+    "graphicTitle": "Can chatgpt be your expert stock trader?",
+    "graphicSkill": "#python #HTML #scarter plots"
+  },
+  {
     "company": "Marketing",
     "link": "html/photogallery_project.html",
     "imageSrc": "img/project1.png",
