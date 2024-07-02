@@ -1,10 +1,10 @@
 [
   {
-    "company": "Machine Learning Article",
+    "company": "Data Visualization",
     "link": "https://jiayi112.pythonanywhere.com",
     "imageSrc": "img/election.png",
-    "graphicTitle": "Can chatgpt be your expert stock trader?",
-    "graphicSkill": "#python #HTML #scarter plots"
+    "graphicTitle": "2024 UK Election - Projected Vote Shares",
+    "graphicSkill": "#python #HTML #groupy chart"
   },
   {
     "company": "Marketing",
